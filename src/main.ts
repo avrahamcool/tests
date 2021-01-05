@@ -1,12 +1,14 @@
+import 'reflect-metadata';
 import {Aurelia} from 'aurelia-framework';
 import * as environment from '../config/environment.json';
 import {PLATFORM} from 'aurelia-pal';
+import {configure as configureDeepComputed} from "aurelia-deep-computed";
 
 export function configure(aurelia: Aurelia): void {
   aurelia.use
     .standardConfiguration()
     .feature(PLATFORM.moduleName('resources/index'))
-    .plugin(PLATFORM.moduleName("aurelia-deep-computed"));
+    .plugin(configureDeepComputed);
 
   aurelia.use.developmentLogging(environment.debug ? 'debug' : 'warn');
 
@@ -14,5 +16,5 @@ export function configure(aurelia: Aurelia): void {
     aurelia.use.plugin(PLATFORM.moduleName('aurelia-testing'));
   }
 
-  aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app-choices/app')));
+  aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app-busy/app')));
 }

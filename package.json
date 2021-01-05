@@ -11,11 +11,17 @@
     "aurelia-animator-css": "^1.0.4",
     "aurelia-bootstrapper": "^2.3.3",
     "aurelia-deep-computed": "^0.1.7",
+    "aurelia-watch-decorator": "^0.0.9",
     "choices.js": "^9.0.1",
+    "crud-compare": "^2.0.5",
+    "flatpickr": "^4.6.6",
     "imask": "^6.0.5",
+    "lodash": "^4.17.20",
+    "reflect-metadata": "^0.1.13",
     "tippy.js": "^6.2.7"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.165",
     "@types/node": "^14.11.2",
     "@types/webpack": "^4.41.22",
     "@typescript-eslint/eslint-plugin": "^4.3.0",

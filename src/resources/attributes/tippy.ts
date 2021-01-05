@@ -24,7 +24,8 @@ export class TippyCustomAttribute {
   private attached() {
     const options = this.isContent(this.options) ?
       {
-        content: this.options
+        content: this.options,
+        allowHTML: true
       } : this.options;
 
     this.tippyInstance = tippy(this.element, options);

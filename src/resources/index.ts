@@ -7,6 +7,7 @@ export function configure(config: FrameworkConfiguration): void
     PLATFORM.moduleName("./attributes/mask"),
     PLATFORM.moduleName("./attributes/tippy"),
     PLATFORM.moduleName("./attributes/choices"),
+    PLATFORM.moduleName("./attributes/flatpickr"),
     PLATFORM.moduleName("./value-converters/json"),
     PLATFORM.moduleName("./value-converters/included-by-field")
 	]);
