@@ -1,3 +1,4 @@
+import { map } from "lodash";
 import { busyTracking } from "resources/decorators/busy-tracking";
 import { cache } from "resources/decorators/cache";
 
@@ -6,15 +7,17 @@ export class App {
 
   @busyTracking()
   public defaultWork(): Promise<string> {
+
     this.prop++;
     return new Promise<string>(resolve => {
       setTimeout(() => {
         resolve("defaultWork Done");
       }, 1000);
     });
+    
   }
 
-  @busyTracking("defaultWork_isBusy")
+  @busyTracking()
   public async workOtherBoolean(): Promise<string> {
     try {
       this.prop++;
@@ -39,10 +42,10 @@ export class App {
   //   });
   // }
 
-  //@cache()
-  public someFunc()
+  @cache()
+  public someFunc(todo)
   {
-    return fetch(`https://jsonplaceholder.typicode.com/todos`)
+    return fetch(`https://jsonplaceholder.typicode.com/todos/${todo}`)
     .then(response => response.json());
   }
 
@@ -51,7 +54,7 @@ export class App {
   {
     const todo = (this.x++%3)+1;
     console.log(todo);
-    this.someFunc()
+    this.someFunc(todo)
     .then(x => console.log(x));
   }
 }
