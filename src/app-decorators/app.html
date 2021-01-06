@@ -1,0 +1,11 @@
+<template>
+	<button click.delegate="defaultWork()">defaultWork</button>
+	defaultWork: ${defaultWork_isBusy}
+
+	<button click.delegate="workOtherBoolean()" disabled.bind="defaultWork_isBusy">workOtherBoolean</button>
+	workOtherBoolean: ${workOtherBoolean_isBusy}
+
+	prop: ${prop}
+
+	<button click.delegate="cacheTest()">Cache test</button>
+</template>

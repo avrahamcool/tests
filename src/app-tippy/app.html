@@ -1,13 +1,24 @@
 <template>
-  <style>
-    .box { border: 1px solid black; padding: 50px; margin: auto;}
-    .parent { width: 800px;}
-    .child { width: 500px;}
-  </style>
-  <div class="box parent" tippy.bind="parent">
-    <span>hover the parent</span>
-    <div class="box child" tippy.bind="tooltip">now try to hover the child</div>
-  </div>
-  <div ref="tooltip">SOME OTHER ELEMENT ${parent}</div>
-  <button click.delegate="parent = parent + 'a'">${parent}</button>
+	<style>
+		.box {
+			border: 1px solid black;
+			padding: 50px;
+			margin: auto;
+		}
+
+		.parent {
+			width: 800px;
+		}
+
+		.child {
+			width: 500px;
+		}
+
+	</style>
+	<div class="box parent" tippy.bind="parent">
+		<span>hover the parent</span>
+		<div class="box child" tippy.bind="tooltip">now try to hover the child</div>
+	</div>
+	<div ref="tooltip">SOME OTHER ELEMENT ${parent}</div>
+	<button click.delegate="parent = parent + 'a'">${parent}</button>
 </template>

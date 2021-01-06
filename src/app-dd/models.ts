@@ -1,12 +1,12 @@
 export interface Worker
 {
-  id: number;
-  name: string;
+	id: number;
+	name: string;
 }
 
 export interface Activity
 {
-  activityName: string;
-  workers: Worker[];
-  selected: Worker;
+	activityName: string;
+	workers: Worker[];
+	selected: Worker;
 }

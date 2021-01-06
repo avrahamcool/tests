@@ -1,19 +1,20 @@
 <template>
 
-  <div dir="rtl">
-    <div repeat.for="activity of activities">
-      
-      
-      <span>${activity.activityName}</span>
-
-      <select value.bind="activity.selected">
-        <option model.bind="null"></option>
-        <option repeat.for="worker of activity.workers" disabled.bind="isSelected(worker, selected)" model.bind="worker">${worker.name}</option>
-      </select>
-      
-      <span>${activity.selected.id}</span>
+	<div dir="rtl">
+		<div repeat.for="activity of activities">
 
 
-    </div>
-  </div>
+			<span>${activity.activityName}</span>
+
+			<select value.bind="activity.selected">
+				<option model.bind="null"></option>
+				<option repeat.for="worker of activity.workers" disabled.bind="isSelected(worker, selected)"
+					model.bind="worker">${worker.name}</option>
+			</select>
+
+			<span>${activity.selected.id}</span>
+
+
+		</div>
+	</div>
 </template>

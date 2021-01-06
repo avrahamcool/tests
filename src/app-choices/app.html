@@ -1,20 +1,26 @@
 <template>
-  <style>
-    * {box-sizing: border-box;}
-    .selected { color: red;}
-  </style>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
 
-  <select choices="value.bind: selected; options.bind: x;"></select>
-  selected = ${selected}
+		.selected {
+			color: red;
+		}
 
-  
-  <button click.delegate="populateArray()">populateArray</button>
-  <button click.delegate="selected = 1">SET value to 1</button>
-  <button click.delegate="selected = null">CLEAR value</button>
+	</style>
 
-  <div class="${selected == null ? 'selected' : ''}">selected == null</div>
-  <div class="${selected === null ? 'selected' : ''}">selected === null</div>
-  <div class="${selected === 1 ? 'selected' : ''}">selected === 1</div>
-  <div class="${selected === 2 ? 'selected' : ''}">selected === 2</div>
-  <div class="${selected === 3 ? 'selected' : ''}" >selected === 3</div>
+	<select choices="value.bind: selected; options.bind: x;"></select>
+	selected = ${selected}
+
+
+	<button click.delegate="populateArray()">populateArray</button>
+	<button click.delegate="selected = 1">SET value to 1</button>
+	<button click.delegate="selected = null">CLEAR value</button>
+
+	<div class="${selected == null ? 'selected' : ''}">selected == null</div>
+	<div class="${selected === null ? 'selected' : ''}">selected === null</div>
+	<div class="${selected === 1 ? 'selected' : ''}">selected === 1</div>
+	<div class="${selected === 2 ? 'selected' : ''}">selected === 2</div>
+	<div class="${selected === 3 ? 'selected' : ''}">selected === 3</div>
 </template>
