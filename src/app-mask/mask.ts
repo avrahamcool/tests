@@ -31,16 +31,14 @@ export class MaskCustomAttribute
 		this.valueSyncHandler = this.bindingEngine.propertyObserver(this.element, "value")
 			.subscribe((newValue: string) =>
 			{
-				this.taskQueue.queueTask(() =>
+				if (this.maskInstance.value !== newValue)
 				{
-					if (this.maskInstance.value !== newValue)
+					this.taskQueue.queueTask(() =>
 					{
-
 						this.maskInstance.value = newValue;
-
 						this.element.dispatchEvent(new Event('change'));
-					}
-				});
+					});
+				}
 			});
 		this.element.dispatchEvent(new Event('change'));
 	}

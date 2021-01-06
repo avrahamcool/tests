@@ -1,5 +1,5 @@
-import { busyTracking } from "resources/decorators/busy-tracking";
-import { cache } from "resources/decorators/cache";
+import { busyTracking } from "./busy-tracking";
+import { cache } from "./cache";
 
 export class App
 {

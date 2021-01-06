@@ -1,7 +1,7 @@
 import { autoinject, bindable, bindingMode } from "aurelia-framework";
 import Choices, { Choices as ChoicesNS } from "choices.js";
 
-@autoinject
+@autoinject()
 export class ChoicesCustomAttribute
 {
 	@bindable({ defaultBindingMode: bindingMode.twoWay }) private value: unknown;
