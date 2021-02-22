@@ -1,0 +1,26 @@
+<template>
+	<require from="./checkbox-group.html"></require>
+	<style>
+		label {
+			display: block;
+		}
+
+		input[type="checkbox"]+span {
+			color: red;
+		}
+
+		input[type="checkbox"]:checked+span {
+			color: green;
+		}
+
+		input[type="checkbox"]:indeterminate+span {
+			color: blue;
+		}
+
+	</style>
+
+	<checkbox-group repeat.for="group of cbGroups" group.bind="group">
+	</checkbox-group>
+
+	<button click.delegate="printAll()">print selected</button>
+</template>

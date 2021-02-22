@@ -1,0 +1,13 @@
+<template bindable="group">
+	<label>
+		<input type="checkbox" checked.bind="group.toggleAll" indeterminate.to-view="group.indeterminate" />
+		<span>${group.name}</span>
+	</label>
+
+	<div style="padding: 0 20px;">
+		<label repeat.for="item of group.items">
+			<input type="checkbox" checked.bind="group.selected" value.bind="item.value" />
+			<span>${item.display}</span>
+		</label>
+	</div>
+</template>
