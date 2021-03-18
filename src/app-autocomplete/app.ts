@@ -5,7 +5,7 @@ export class App
 	names: string[];
 	attached()
 	{
-		this.names = names.map(x => x.name);//.slice(0, 1000);
+		this.names = names.map(x => x.name);
 	}
 	changeSource()
 	{
