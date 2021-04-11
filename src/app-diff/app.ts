@@ -9,7 +9,7 @@ export class App
 {
 	constructor(private personService: PersonService) { }
 
-	persons: TrackingContext<Person>;
+	personContext: TrackingContext<Person>;
 	states: State[] = [
 		{
 			value: 1,
@@ -29,16 +29,17 @@ export class App
 	{
 		this.personService
 			.getPersons()
-			.then(entities => new TrackingContext(entities, "id"))
-			.then(context => this.persons = context);
+			.then(entities => new TrackingContext(entities, 'id'))
+			.then(context => this.personContext = context);
 	}
 
 	uniqueID = 2;
 	save(): void
 	{
-		const diff = this.persons.getDiff();
+		const diff = this.personContext.getDiff();
 		console.log(diff);
+		//TODO: send to server - receive IDS back
 		diff.created.forEach(x => x.id = ++this.uniqueID);
-		this.persons.commit();
+		this.personContext.commit();
 	}
 }

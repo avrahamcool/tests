@@ -8,11 +8,11 @@
 		}
 
 	</style>
-	<button click.delegate="persons.entities.push({id: -1, numberOfTeeth: 0, isAlive: true})">ADD</button>
+	<button click.delegate="personContext.entities.push({id: -1, numberOfTeeth: 0, isAlive: true})">ADD</button>
 	<button click.delegate="save()">SAVE</button>
 
-	<div repeat.for="p of persons.entities" class="border">
-		<button click.delegate="persons.entities.splice($index, 1)">REMOVE</button>
+	<div repeat.for="p of personContext.entities" class="border">
+		<button click.delegate="personContext.entities.splice($index, 1)">REMOVE</button>
 		<br>
 		<span>id: ${p.id || "??"}</span>
 		<label>firstName: <input value.bind="p.firstName" /></label>
