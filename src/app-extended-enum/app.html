@@ -1,0 +1,12 @@
+<template>
+	<require from="./enum-view-engine-hooks"></require>
+
+	Extended Enum:
+	<select value.bind="selectedOption">
+		<option repeat.for="o of AgeFilterEnumEntries" model.bind="o">${o.id} - ${o.displayName}</option>
+	</select>
+
+	<div>
+		is Children? ${selectedOption === AgeFilterEnum.Children}
+	</div>
+</template>

@@ -18,5 +18,5 @@ export function configure(aurelia: Aurelia): void
 		aurelia.use.plugin(PLATFORM.moduleName('aurelia-testing'));
 	}
 
-	aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app-diff/app')));
+	aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app-extended-enum/app')));
 }
