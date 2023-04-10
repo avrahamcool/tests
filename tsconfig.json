@@ -1,6 +1,7 @@
 {
 	"compileOnSave": false,
 	"compilerOptions": {
+		"esModuleInterop": true,
 		"module": "esnext",
 		"typeRoots": [
 			"./node_modules/@types"
@@ -11,14 +12,14 @@
 		"sourceMap": true,
 		"target": "ESNext",
 		"lib": [
-			"es2019",
+			"ESNext",
 			"dom"
 		],
 		"moduleResolution": "node",
 		"baseUrl": "src",
 		"resolveJsonModule": true,
-		"allowJs": true,
-		"allowSyntheticDefaultImports": true
+		"importHelpers": true,
+		"allowJs": true
 	},
 	"include": [
 		"src",

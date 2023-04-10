@@ -1,5 +1,6 @@
-import { PLATFORM } from "aurelia-pal";
-import { FrameworkConfiguration } from "aurelia-framework";
+import { FrameworkConfiguration, PLATFORM } from "aurelia-framework";
+import { RepeatStrategyLocator } from "aurelia-templating-resources";
+import { IteratorStrategy } from "./repeat-strategies/iterable-repeat-strategy";
 
 export function configure(config: FrameworkConfiguration): void
 {
@@ -7,4 +8,8 @@ export function configure(config: FrameworkConfiguration): void
 		PLATFORM.moduleName("./value-converters/json"),
 		PLATFORM.moduleName("./binding-behaviors/async")
 	]);
+
+	config.container
+		.get(RepeatStrategyLocator)
+		.addStrategy(IteratorStrategy.IteratorStrategyMatcher, new IteratorStrategy());
 }

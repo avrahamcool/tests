@@ -3,9 +3,8 @@
 
 	Extended Enum:
 	<select value.bind="selectedOption">
-		<option repeat.for="o of AgeFilterEnumEntries" model.bind="o">${o.id} - ${o.displayName}</option>
+		<option repeat.for="o of AgeFilterEnum" model.bind="o">${o.id} - ${o.displayName}</option>
 	</select>
-
 	<div>
 		is Children? ${selectedOption === AgeFilterEnum.Children}
 	</div>

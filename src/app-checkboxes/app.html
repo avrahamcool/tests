@@ -17,10 +17,15 @@
 			color: blue;
 		}
 
+		.checkbox-group {
+			padding: 0 20px;
+		}
+
 	</style>
 
 	<checkbox-group repeat.for="group of cbGroups" group.bind="group">
 	</checkbox-group>
 
 	<button click.delegate="printAll()">print selected</button>
+	<pre>${selected}</pre>
 </template>

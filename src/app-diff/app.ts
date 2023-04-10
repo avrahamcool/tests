@@ -1,6 +1,6 @@
-import { autoinject } from 'aurelia-framework';
+import { autoinject } from "aurelia-framework";
 import { Person, State } from "./models";
-import { PersonService } from './persons-service';
+import { PersonService } from "./persons-service";
 import { TrackingContext } from "./tracking-context";
 import "flatpickr/dist/flatpickr.min.css";
 
@@ -22,14 +22,14 @@ export class App
 		{
 			value: 3,
 			description: "dubai"
-		},
+		}
 	];
 
 	private activate()
 	{
 		this.personService
 			.getPersons()
-			.then(entities => new TrackingContext(entities, 'id'))
+			.then(entities => new TrackingContext(entities, "id"))
 			.then(context => this.personContext = context);
 	}
 
@@ -38,6 +38,7 @@ export class App
 	{
 		const diff = this.personContext.getDiff();
 		console.log(diff);
+
 		//TODO: send to server - receive IDS back
 		diff.created.forEach(x => x.id = ++this.uniqueID);
 		this.personContext.commit();

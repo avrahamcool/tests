@@ -6,6 +6,5 @@ export class EnumViewEngineHooks implements ViewEngineHooks
 	beforeBind(view: View): void
 	{
 		view.overrideContext["AgeFilterEnum"] = AgeFilterEnum;
-		view.overrideContext["AgeFilterEnumEntries"] = Array.from(AgeFilterEnum);
 	}
 }

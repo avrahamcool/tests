@@ -6,7 +6,7 @@ import { FieldService } from "./field-service";
 export class App
 {
 	cbGroups: CheckboxGroupModel[];
-
+	selected: string[];
 	constructor(service: FieldService)
 	{
 		Promise.all([service.getGroups(), service.getSelected()])
@@ -14,9 +14,9 @@ export class App
 			.then(cbGroups => this.cbGroups = cbGroups);
 	}
 
+
 	public printAll(): void
 	{
-		const selected = this.cbGroups.flatMap(g => g.selected);
-		console.log(selected);
+		this.selected = this.cbGroups.flatMap(g => g.selected);
 	}
 }

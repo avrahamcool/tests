@@ -1,30 +1,43 @@
 {
-	"typescript.tsdk": "node_modules/typescript/lib",
+	"autoimport.doubleQuotes": true,
+	"cSpell.language": "en,he",
+	"cSpell.customDictionaries": {
+		"project-words": {
+			"name": "project-words",
+			"path": "${workspaceRoot}/.vscode/dictionary.txt",
+			"description": "Words used in this project",
+			"addWords": true
+		},
+		"custom": true, // Enable the `custom` dictionary
+	},
+	"css.validate": false,
+	"editor.bracketPairColorization.enabled": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll": true
 	},
 	"editor.detectIndentation": false,
 	"editor.formatOnSave": true,
-	"html.format.endWithNewline": true,
-	"html.format.indentInnerHtml": true,
-	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
-	"javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
-	"javascript.format.placeOpenBraceOnNewLineForFunctions": true,
-	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
-	"typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
-	"typescript.format.placeOpenBraceOnNewLineForFunctions": true,
-	"javascript.preferences.quoteStyle": "double",
-	"typescript.preferences.quoteStyle": "double",
-	"autoimport.doubleQuotes": true,
-	"editor.fontFamily": "Fira Code Retina",
-	"editor.fontLigatures": true,
-	"eslint.packageManager": "yarn",
+	"editor.guides.bracketPairs": "active",
+	"editor.insertSpaces": false,
 	"editor.linkedEditing": true,
-	"cSpell.language": "en,he",
-	"cSpell.words": [
-		"Notyf",
-		"autoinject",
-		"nameof"
+	"eslint.format.enable": true,
+	"eslint.packageManager": "yarn",
+	"eslint.validate": [
+		"javascript",
+		"typescript"
 	],
-	"editor.insertSpaces": false
+	"files.eol": "\r\n",
+	"files.exclude": {
+		"**/*.csproj": true,
+		"**/*.vspscc": true,
+		"**/bin/**": true,
+		"**/obj/**": true,
+		"**/node_modules/**": true,
+	},
+	"files.insertFinalNewline": true,
+	"less.validate": false,
+	"scss.validate": false,
+	"stylelint.enable": true,
+	"stylelint.packageManager": "yarn",
+	"typescript.tsdk": "node_modules/typescript/lib"
 }

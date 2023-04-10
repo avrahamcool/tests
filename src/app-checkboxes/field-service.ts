@@ -32,7 +32,7 @@ export class FieldService
 			"field 2",
 			"field 3",
 			"field 6",
-			"field 5",
+			"field 5"
 		]);
 	}
 }

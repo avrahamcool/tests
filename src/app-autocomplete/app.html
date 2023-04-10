@@ -1,8 +1,0 @@
-<template>
-	<require from="js-autocomplete/auto-complete.css"></require>
-	<require from="./auto-complete"></require>
-
-	<input value.bind="value" auto-complete.bind="names" />
-	<button click.delegate="changeSource()">changeSource</button>
-	${value} - ${names.length}
-</template>

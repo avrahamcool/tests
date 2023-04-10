@@ -23,7 +23,7 @@ export class TrackingContext<T>
 	constructor(public entities: T[], keyOrMatcher: ObjectMatcher<T>)
 	{
 		// transform simple key into a matcher function
-		this.matcher = typeof keyOrMatcher === 'string'
+		this.matcher = typeof keyOrMatcher === "string"
 			? (o1, o2) => o1[keyOrMatcher] === o2[keyOrMatcher]
 			: keyOrMatcher;
 
@@ -46,7 +46,11 @@ export class TrackingContext<T>
 			};
 		}
 
-		const created: T[] = this.entities.filter(newObj => !this.original.find(originalObj => this.matcher(originalObj, newObj)));
+		const created: T[] = this.entities.filter(newObj =>
+		{
+			const match = this.original.find(originalObj => this.matcher(originalObj, newObj));
+			return !match;
+		});
 
 		const updated: T[] = [];
 		const deleted: T[] = [];

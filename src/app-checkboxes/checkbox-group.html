@@ -4,7 +4,7 @@
 		<span>${group.name}</span>
 	</label>
 
-	<div style="padding: 0 20px;">
+	<div class="checkbox-group">
 		<label repeat.for="item of group.items">
 			<input type="checkbox" checked.bind="group.selected" value.bind="item.value" />
 			<span>${item.display}</span>
