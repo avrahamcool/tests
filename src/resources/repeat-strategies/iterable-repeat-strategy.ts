@@ -21,14 +21,14 @@ export class IteratorStrategy implements RepeatStrategy
 
 	private _standardProcessItems(repeat: Repeat, items: Iterable<unknown>)
 	{
-		let index = 0;
-		for(const value of items)
-		{
-			const overrideContext = createFullOverrideContext(repeat, value, index, undefined);
+		const arr = Array.from(items);
+		const length = arr.length;
 
+		arr.forEach((value, index) =>
+		{
+			const overrideContext = createFullOverrideContext(repeat, value, index, length);
 			repeat.addView(overrideContext.bindingContext, overrideContext);
-			++index;
-		}
+		});
 	}
 
 	public static IteratorStrategyMatcher(items: unknown): boolean
