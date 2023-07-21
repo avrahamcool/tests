@@ -1,0 +1,13 @@
+<template>
+	<style>
+		.text {
+			border: 1px solid black;
+			padding: 1rem;
+		}
+	</style>
+	<div>
+		<button click.delegate="rotateText()">rotate text</button>
+		<span>${currentTextIndex+1}/${textArr.length}</span>
+	</div>
+	<div class="text">${currentText}</div>
+</template>

@@ -1,6 +1,6 @@
 import { Aurelia, PLATFORM } from "aurelia-framework";
 import environment from "../config/environment.json";
-import { App } from "app-extended-enum/app";
+import { App } from "app-search/app";
 
 export function configure(aurelia: Aurelia): void
 {
