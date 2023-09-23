@@ -21,7 +21,6 @@
 	"editor.insertSpaces": false,
 	"editor.linkedEditing": true,
 	"eslint.format.enable": true,
-	"eslint.packageManager": "yarn",
 	"eslint.validate": [
 		"javascript",
 		"typescript"
