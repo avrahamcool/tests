@@ -1,0 +1,62 @@
+<template>
+	<require from="./show-if-possible"></require>
+	<style>
+		.body {
+			padding: 1rem;
+			gap: 0.5rem;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.ribbon {
+			display: flex;
+			align-items: center;
+			overflow: hidden;
+		}
+
+		.tab {
+			border: 1px solid black;
+			padding: 1rem;
+			white-space: nowrap;
+		}
+
+		.tab.active {
+			background-color: greenyellow;
+		}
+
+		.tab.more {
+			padding: 1rem 0.25rem;
+		}
+
+		.invisible {
+			visibility: hidden;
+		}
+	</style>
+
+	<let active-tab.bind="activeTab" last-tab.bind="tabs[tabs.length-1]"></let>
+
+	<div class="body">
+		<div class="ribbon">
+			<div class="ribbon">
+				<div repeat.for="tab of tabs" click.delegate="activeTab = tab"
+					class="tab ${activeTab === tab ? 'active' : ''}" show-if-possible
+					show-if-possible.ref="tab.showIfPossible">
+					${tab.name}
+				</div>
+			</div>
+			<div if.bind="!lastTab.showIfPossible.isVisible"
+				class="tab more ${activeTab && !activeTab.showIfPossible.isVisible ? 'active' : ''}">
+				V
+			</div>
+		</div>
+		<div>SHOULD BE IN MORE</div>
+		<div repeat.for="tab of tabs" class="${activeTab === tab ? 'active' : ''}"
+			if.bind="!tab.showIfPossible.isVisible">
+			${tab.name}
+		</div>
+		<div if.bind="activeTab">
+			activeTab: ${activeTab.name}
+			<span click.delegate="activeTab = null">X</span>
+		</div>
+	</div>
+</template>
