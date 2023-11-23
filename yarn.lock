@@ -536,10 +536,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
 
-"@types/lodash@^4.14.192":
-  version "4.14.192"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.192.tgz#5790406361a2852d332d41635d927f1600811285"
-  integrity sha512-km+Vyn3BYm5ytMO13k9KTp27O75rbQ0NFw+U//g+PX7VZyjCioXaRFisqSIJRECljcTv73G3i6BpglNGHgUQ5A==
+"@types/lodash@^4.14.202":
+  version "4.14.202"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.202.tgz#f09dbd2fb082d507178b2f2a5c7e74bd72ff98f8"
+  integrity sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==
 
 "@types/mime@*":
   version "3.0.1"
@@ -598,10 +598,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/webpack@^5.28.0":
-  version "5.28.1"
-  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-5.28.1.tgz#c369baeff31abe54b45f7f29997e1623604198d6"
-  integrity sha512-qw1MqGZclCoBrpiSe/hokSgQM/su8Ocpl3L/YHE0L6moyaypg4+5F7Uzq7NgaPKPxUxUbQ4fLPLpDWdR27bCZw==
+"@types/webpack@^5.28.5":
+  version "5.28.5"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-5.28.5.tgz#0e9d9a15efa09bbda2cef41356ca4ac2031ea9a2"
+  integrity sha512-wR87cgvxj3p6D0Crt1r5avwqffqPXUkNlnQ1mjU93G7gCuFjufZR4I6j8cz5g1F1tTYpfOOFvly+cmIQwL9wvw==
   dependencies:
     "@types/node" "*"
     tapable "^2.2.0"
@@ -1005,10 +1005,10 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-app-settings-loader@^2.0.7:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/app-settings-loader/-/app-settings-loader-2.0.8.tgz#17175cef8747ca904740f396fdebe2765481c760"
-  integrity sha512-eTLywliLdn/jqMzEs4Iq/p291jtcJ4j6Zb7hV2kaxKoHuMLsGpg9SIGg3o5I/q/fXh/LcZKIufG5oU//d48vDg==
+app-settings-loader@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/app-settings-loader/-/app-settings-loader-2.0.9.tgz#1363124accec3453c2392132a09766d7d52dff98"
+  integrity sha512-Zk4UCyfmSDKjaX0NUpptQrNMG7Zgm1dZZ9FJ/GG6Xf1ip70k8ugPC4mgBHvQ8APvsW8km06Oy9VLgoruyANcTg==
   dependencies:
     loader-utils "^3.2.1"
     schema-utils "^4.0.0"
@@ -1228,10 +1228,10 @@ aurelia-bootstrapper@^2.4.0:
     aurelia-templating-resources "^1.14.1"
     aurelia-templating-router "^1.5.0"
 
-aurelia-cli@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/aurelia-cli/-/aurelia-cli-3.0.1.tgz#6ff96a38fb26d363f4ff2e2dd29844c8752bb603"
-  integrity sha512-3EOsoI+gWSVlRDdl3ysX8WBplTCxNe//4Z7YFe7CuS09yvWTqC1H6UCa+6G9dF2zjkpcr+d26JL2pM9rHFQuDg==
+aurelia-cli@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/aurelia-cli/-/aurelia-cli-3.0.2.tgz#3e72abe1e4b40d1676c40daba4ebdfadc51352f5"
+  integrity sha512-SVbRzIpGfVlKRimBIBrcbm4icrWvDthid66Y9OWIHYUSKY5G8U0prDSvGxNIstq/19V3hBJKS1rT0D0oMPtJmQ==
   dependencies:
     "@babel/core" "^7.18.2"
     "@babel/plugin-proposal-class-properties" "^7.17.12"
@@ -1476,10 +1476,10 @@ aurelia-templating@^1.0.0, aurelia-templating@^1.11.1:
     aurelia-path "^1.1.7"
     aurelia-task-queue "^1.1.0"
 
-aurelia-webpack-plugin@^5.0.4:
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/aurelia-webpack-plugin/-/aurelia-webpack-plugin-5.0.5.tgz#53a103e040c4b95d4874bb05bba992f831944025"
-  integrity sha512-oIHMfQpol2eLRgGP2loKEqXC/1tnvOcPt62mDIbJ7gYe1JevUQlz1v7wJw/CSVDx7NQyQfw4PBevz+Z7NRnpkg==
+aurelia-webpack-plugin@^5.0.6:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/aurelia-webpack-plugin/-/aurelia-webpack-plugin-5.0.6.tgz#f36c0ea33c9cb68b4788e6518b1ee97827e4b399"
+  integrity sha512-nTT6cLIY7KbElG2vBE3+oHLNaGgJsC+Dxz781+Zj+HInQyXknXbyo+3BGHl5I+mN6QcPYb7+BGB2cMl3xo9FLQ==
   dependencies:
     aurelia-loader-webpack "^2.2.4"
     loader-utils "^1.1.0"
@@ -3769,10 +3769,10 @@ html-minifier-terser@^7.0.0:
     relateurl "^0.2.7"
     terser "^5.15.1"
 
-html-webpack-plugin@^5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-5.5.0.tgz#c3911936f57681c1f9f4d8b68c158cd9dfe52f50"
-  integrity sha512-sy88PC2cRTVxvETRgUHFrL4No3UxvcH8G1NepGhqaTT+GXN2kTamqasot0inS5hXeg1cMbFDt27zzo9p35lZVw==
+html-webpack-plugin@^5.5.3:
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-5.5.3.tgz#72270f4a78e222b5825b296e5e3e1328ad525a3e"
+  integrity sha512-6YrDKTuqaP/TquFH7h4srYWsZx+x6k6+FbsTm0ziCwGHDP78Unr1r9F/H4+sGmMbX08GQcJ+K64x55b+7VM/jg==
   dependencies:
     "@types/html-minifier-terser" "^6.0.0"
     html-minifier-terser "^6.0.2"
@@ -4694,10 +4694,10 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
-mini-css-extract-plugin@^2.7.2:
-  version "2.7.5"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.7.5.tgz#afbb344977659ec0f1f6e050c7aea456b121cfc5"
-  integrity sha512-9HaR++0mlgom81s95vvNjxkg52n2b5s//3ZTI1EtzFb98awsLSivs2LMsVqnQ3ay0PVhqWcGNyDaTE961FOcjQ==
+mini-css-extract-plugin@^2.7.6:
+  version "2.7.6"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.7.6.tgz#282a3d38863fddcd2e0c220aaed5b90bc156564d"
+  integrity sha512-Qk7HcgaPkGG6eD77mLvZS1nmxlao3j+9PkrT9Uc7HAE1id3F41+DdBRYRYkbyfNRGzm8/YWtzhw7nVPmwhqTQw==
   dependencies:
     schema-utils "^4.0.0"
 
@@ -4725,10 +4725,10 @@ minimatch@^5.1.0:
   dependencies:
     brace-expansion "^2.0.1"
 
-minimatch@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-9.0.0.tgz#bfc8e88a1c40ffd40c172ddac3decb8451503b56"
-  integrity sha512-0jJj8AvgKqWN05mrwuqi8QYKx1WmYSUoKSxu5Qhs9prezTz10sxAHGNZe9J9cqIJzta8DWsleh2KaVaLl6Ru2w==
+minimatch@^9.0.3:
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-9.0.3.tgz#a6e00c3de44c3a542bfaae70abfc22420a6da825"
+  integrity sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==
   dependencies:
     brace-expansion "^2.0.1"
 
@@ -6417,10 +6417,10 @@ strip-json-comments@^3.0.1, strip-json-comments@^3.1.0, strip-json-comments@^3.1
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
-style-loader@^3.3.1:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-3.3.2.tgz#eaebca714d9e462c19aa1e3599057bc363924899"
-  integrity sha512-RHs/vcrKdQK8wZliteNK4NKzxvLBzpuHMqYmUVWeKa6MkaIQ97ZTOS0b+zapZhy6GcrgWnvWYCMHRirC3FsUmw==
+style-loader@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-3.3.3.tgz#bba8daac19930169c0c9c96706749a597ae3acff"
+  integrity sha512-53BiGLXAcll9maCYtZi2RCQZKa8NQQai5C4horqKyRmHj9H7QmcUyucrH+4KW/gBQbXM2AsB0axoEcFZPlfPcw==
 
 supports-color@^5.3.0:
   version "5.5.0"

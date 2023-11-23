@@ -1,0 +1,10 @@
+<template>
+	<require from="./nested-comp"></require>
+
+	<div>
+		In App: ${selectedInApp}
+	</div>
+
+	<nested-comp selected-in-nested.bind="selectedInApp"></nested-comp>
+
+</template>
