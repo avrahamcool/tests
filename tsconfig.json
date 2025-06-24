@@ -10,7 +10,7 @@
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"sourceMap": true,
-		"target": "ESNext",
+		"target": "es2021",
 		"lib": [
 			"ESNext",
 			"dom"

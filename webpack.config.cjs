@@ -18,11 +18,7 @@ const outDir = path.resolve(__dirname, project.platform.output);
 const srcDir = path.resolve(__dirname, "src");
 const baseUrl = "/";
 
-const cssRules = [
-	{
-		loader: "css-loader"
-	}
-];
+const cssRules = [{ loader: "css-loader" }];
 
 const sassRules = [
 	{
@@ -41,10 +37,6 @@ module.exports = ({ production }, { analyze, hmr, port, host }) => ({
 		modules: [srcDir, "node_modules"],
 
 		alias: {
-			// https://github.com/aurelia/dialog/issues/387
-			// Uncomment next line if you had trouble to run aurelia-dialog on IE11
-			// 'aurelia-dialog': path.resolve(__dirname, 'node_modules/aurelia-dialog/dist/umd/aurelia-dialog.js'),
-
 			// https://github.com/aurelia/binding/issues/702
 			// Enforce single aurelia-binding, to avoid v1/v2 duplication due to
 			// out-of-date dependencies on 3rd party aurelia plugins
@@ -52,11 +44,7 @@ module.exports = ({ production }, { analyze, hmr, port, host }) => ({
 		}
 	},
 	entry: {
-		app: [
-			// Uncomment next line if you need to support IE11
-			// 'promise-polyfill/src/polyfill',
-			"aurelia-bootstrapper"
-		]
+		app: [ "aurelia-bootstrapper" ]
 	},
 	mode: production ? "production" : "development",
 	output: {
